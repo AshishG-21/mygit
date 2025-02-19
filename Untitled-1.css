@@ -1,0 +1,55 @@
+https://i.pinimg.com/originals/50/1a/2e/501a2ebc4c463bcedcf7561e261123c7.jpg
+.skills-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill {
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.progress {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #9b59b6;
+}
+
+.skill span {
+    float: right;
+    font-size: 1rem;
+    color: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
