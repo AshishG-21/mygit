@@ -34,6 +34,7 @@ Replace App.jsx code with the new React code
 
 ###  Navigate to your new react application directory:
 cd my-react-app
+
 cd src
 
 ### Install dependencies
