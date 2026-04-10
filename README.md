@@ -27,7 +27,11 @@ npm install -g create-vite
 
 ### Create a React Application
 Run this command to create a React application named my-react-app:
+
 npm create vite@latest my-react-app -- --template react
+
+### Locate App.jsx
+After opening the frontend folder, click on my-react-app, open src folder where you will find App.jsx.
 
 ### Replace App.jsx
 Replace App.jsx code with the new React code
