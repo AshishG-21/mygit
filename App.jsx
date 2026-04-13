@@ -1,17 +1,17 @@
-import react,{ useState,useEffect } from 'react';
+import React,{ useState,useEffect } from 'react';
 
 function App() {
   const [name, setName] = useState("");
-  const [slotName, setRoomName] = useState("");
+  const [roomName, setRoomName] = useState("");
 const [employees, setEmployees] = useState([]);
-const [slots,setRooms] = useState([]);
+const [rooms,setRooms] = useState([]);
 
 const API="http://127.0.0.1:8000";
 
 
-useEffect(()=>{
-  fetch(API+ "/employees").then(res=>res.JSON).then("setEmployees");
-  fetch(API + "/rooms").then(res=>res.JSON).then("setRooms");
+useEffect(()=>{  
+  fetch(API+ "/get_employees").then(res=>res.json()).then(data=> setEmployees(data));
+  fetch(API + "/get_rooms").then(res=>res.json()).then(data=> setRooms(data));
 },[]);
 
 const addEmployee= async()=>{
@@ -22,8 +22,7 @@ const addEmployee= async()=>{
   await fetch(API + "/rooms?name=" + roomName,{method:"POST"});
   window.location.reload();
 };
-
-  return (
+return (
      <div>
       <h2>Employee Room System</h2>
 
